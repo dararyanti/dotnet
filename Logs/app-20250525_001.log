@@ -1,0 +1,3 @@
+2025-05-25 19:38:07.819 +07:00 [ERR] Failed executing DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+{"@t":"2025-05-25T12:41:41.0768436Z","@mt":"Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}","@l":"Error","elapsed":"28","parameters":"","commandType":"Text","commandTimeout":30,"newLine":"\r\n","commandText":"CREATE EXTENSION IF NOT EXISTS \"pgcrypto\";","EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command"}

@@ -1,0 +1,4 @@
+2025-05-22 17:47:49.087 +07:00 [ERR] An error occurred using the connection to database 'training_dotnet' on server 'tcp://localhost:5432'.
+2025-05-22 17:47:49.609 +07:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE employees ALTER COLUMN department_id TYPE uuid;
+{"@t":"2025-05-22T10:49:27.5729552Z","@mt":"Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}","@l":"Error","elapsed":"4","parameters":"","commandType":"Text","commandTimeout":30,"newLine":"\r\n","commandText":"ALTER TABLE employees ALTER COLUMN department_id TYPE uuid;","EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command"}

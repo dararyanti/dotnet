@@ -1,0 +1,3 @@
+2025-05-25 19:51:07.002 +07:00 [ERR] Failed executing DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "RoleNameIndex" ON roles ("NormalizedName");
+{"@t":"2025-05-25T12:53:29.1472470Z","@mt":"Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}","@l":"Error","elapsed":"35","parameters":"","commandType":"Text","commandTimeout":30,"newLine":"\r\n","commandText":"CREATE INDEX \"EmailIndex\" ON users (\"NormalizedEmail\");","EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command"}

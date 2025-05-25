@@ -1,0 +1,2 @@
+2025-05-22 17:53:00.051 +07:00 [ERR] An error occurred using the connection to database 'training_dotnet' on server 'tcp://localhost:5432'.
+{"@t":"2025-05-22T10:53:40.4437097Z","@mt":"An error occurred using the connection to database '{database}' on server '{server}'.","@l":"Error","database":"training_dotnet","server":"tcp://localhost:5432","EventId":{"Id":20004,"Name":"Microsoft.EntityFrameworkCore.Database.Connection.ConnectionError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Connection"}

@@ -1,0 +1,14 @@
+2025-05-25 19:48:07.211 +07:00 [ERR] Failed executing DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE dara_employees (
+    employee_id uuid NOT NULL DEFAULT (gen_random_uuid()),
+    first_name character varying(100) NOT NULL,
+    last_name character varying(100) NOT NULL,
+    email character varying(150) NOT NULL,
+    hire_date timestamp with time zone NOT NULL,
+    department_id uuid,
+    create_date timestamp with time zone NOT NULL,
+    create_name character varying(100) NOT NULL,
+    CONSTRAINT "PK_dara_employees" PRIMARY KEY (employee_id),
+    CONSTRAINT "FK_dara_employees_dara_departments_department_id" FOREIGN KEY (department_id) REFERENCES dara_departments (department_id)
+);
+{"@t":"2025-05-25T12:51:07.0026556Z","@mt":"Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}","@l":"Error","elapsed":"46","parameters":"","commandType":"Text","commandTimeout":30,"newLine":"\r\n","commandText":"CREATE UNIQUE INDEX \"RoleNameIndex\" ON roles (\"NormalizedName\");","EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command"}
